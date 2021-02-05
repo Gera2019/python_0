@@ -1,0 +1,27 @@
+# Задание 1
+number = int(input('Введите число: '))
+print(number * 2)
+
+# Задание 2
+while True:
+    n = int(input('Введите число '))
+    if 0 < n < 10:
+        print('Результат', n ** 2)
+        break
+    else:
+        print('Число неверное. Попробуйте в диапазоне от 1 до 9' )
+
+# Задание 3
+print('Медецинская карта')
+name = input('Введите ваши Фамилию и Имя: ')
+age = int(input('Введите ваш возраст: '))
+weigh = int(input('Введите ваш вес: '))
+
+if age <= 30 and 50 < weigh < 120:
+    print('Вы в хорошем состоянии')
+elif age > 30 and (weigh < 50 or weigh > 120):
+    print('Вам следует заняться собой')
+elif age > 40 and (weigh < 50 or weigh > 120):
+    print('Вам следует пройти врачебный осмотр')
+else:
+    print('Вы инопланетянин')
